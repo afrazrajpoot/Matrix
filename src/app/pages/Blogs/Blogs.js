@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Header from "../../components/Header";
 import { useGlobalState } from "../../../context/GlobalState";
+import Footer from "../../components/Footer";
 
 
 export const Blogs = () => {
@@ -607,128 +608,7 @@ export const Blogs = () => {
             </div>
           </div>
         </section>
-        <footer>
-          <div id="footer" className="footer-as">
-            <div className="footer">
-              <div className="inner">
-                <div className="footer-logo">
-                  <img src="/images/matrix-logo.svg" />
-                </div>
-                <div className="footer-left">
-                  <div className="footer-contact">
-                    <h4>We are available at...</h4>
-                    {/*<span>Tel: <a class="tel-num" href="tel:+17345784736" data-tel="+17345784736">+1 734 578 4736</a></span>*/}
-                    {/*<span>Tel: <a class="tel-num" href="tel:+924235947181" data-tel="+924235947181">+92 423 594 7181</a></span>*/}
-                    <span>
-                      Mob:{" "}
-                      <a
-                        className="mob-num"
-                        href="tel:+923008485536"
-                        data-tel={+923008485536}
-                      >
-                        +92 300 848 5536
-                      </a>{" "}
-                    </span>
-                  </div>
-                  <div className="footer-offices">
-                    <h4>Our locations are…</h4>
-                    <div className="offices-list">
-                      {/*<ul>
-                        <li style="padding-bothrefm:30px;">*/}
-                      {/*<span>address</span>*/}
-                      {/*US Office: <br />2200 N Canhrefn Center<br />
-                            RD Suite 170 Canhrefn,<br />
-                            MI, 48187, USa
-                        </li>
-                        <li>*/}
-                      {/*<span>address</span>*/}
-                      {/*&nbsp;
-                            </li>
-  
-                        </ul>*/}
-                      <ul>
-                        <li>
-                          {/*<span>address</span>*/}
-                          666, askari IX
-                          <br />
-                          Lahore Cantt, Pakistan
-                        </li>
-                        <li>
-                          {/*<span>address 2</span>*/}
-                          129 J, Model hrefwn
-                          <br />
-                          Lahore, Pakistan
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="patner-a">
-                    <h4>Our partners are...</h4>
-                    <a href="https://smallbackroom.co.uk/" target="_blank">
-                      Smallbackroom
-                    </a>
-                    <a href="http://www.matrixmanagement.com.pk/" target="_blank">
-                      Matrix Management
-                    </a>
-                    <a href="https://zealsoftsolutions.com/" target="_blank">
-                      Zealsoft
-                    </a>
-                    {/*<a href="http://shrefryandco.eu/" target="_blank">Shrefrynco</a>*/}
-                  </div>
-                </div>
-                <div className="social-a">
-                  <div className="social-inner">
-                    <a
-                      className="facebook ir"
-                      href="https://facebook.com/Matrix-Solutions-101790821682744"
-                      title="Facebook"
-                      target="_blank"
-                    >
-                      Facebook
-                    </a>
-                    <a
-                      className="twitter ir"
-                      href="javascript:;"
-                      style={{ display: "none" }}
-                      title="Twitter"
-                      target="_blank"
-                    >
-                      Twitter
-                    </a>
-                    <a
-                      className="aed-in ir"
-                      href="https://www.aedin.com/in/matirx-solutions-2177bb1b7/"
-                      title="aedIn"
-                      target="_blank"
-                    >
-                      aedIn
-                    </a>
-                    <a
-                      className="youtube ir"
-                      href="https://www.youtube.com/channel/UCIpSvDsdtmJy67Gig8m6RUQ"
-                      title="Youtube"
-                      target="_blank"
-                    >
-                      Youtube
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="copyright">
-            <span className="copyright-text">© Copyright 2000-2022.</span>
-            <a href="terms-and-conditions" className="copyright-a">
-              Terms &amp; Conditions
-            </a>
-            <a href="privacy-policy" className="copyright-a">
-              Privacy Policy
-            </a>
-            <a href="cookie-policy" className="copyright-a">
-              Cookies Policy
-            </a>
-          </div>
-        </footer>
+       <Footer />
       </div>
       <a
         rel="stylesheet"

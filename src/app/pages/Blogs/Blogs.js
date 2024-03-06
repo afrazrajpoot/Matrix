@@ -1,79 +1,19 @@
-export const Blogs = () => (
+import { useEffect } from "react";
+import Header from "../../components/Header";
+import { useGlobalState } from "../../../context/GlobalState";
+
+
+export const Blogs = () => {
+  const { state, setState, contactState, setContactState } = useGlobalState()
+
+  useEffect(()=>{
+    setState(false)
+  },[])
+  return (
     <>
       {/*<div id="container-cookies"></div>*/}
       <div id="outer-wrapper">
-        <header>
-          <div className="header">
-            <a href="../" title="Matrix Solutions" className="logo ir">
-              Matrix
-            </a>
-            <a className="menu ir" href="#">
-              Menu
-            </a>
-            <a className="contact-icon ir" href="#">
-              contact-icon
-            </a>
-            <nav>
-              <div className="middle-nav">
-                <div className="middle-cell">
-                  <ul>
-                    <li>
-                      <a className="scroll" href="./../#our-clients">
-                        Our clients
-                      </a>
-                    </li>
-                    <li>
-                      <a className="scroll" href="./../#recent-work">
-                        Recent work
-                      </a>
-                    </li>
-                    <li>
-                      <a href="../services">Services</a>
-                    </li>
-                    <li>
-                      <a href="../our-work">Our work</a>
-                    </li>
-                    <li>
-                      <a className="scroll" href="./../#what-we-do">
-                        What we do
-                      </a>
-                    </li>
-                    <li>
-                      <a className="scroll" href="./../#our-technologies">
-                        Our technologies
-                      </a>
-                    </li>
-                    <li>
-                      <a className="scroll" href="../blogs">
-                        Blogs
-                      </a>
-                    </li>
-                    <li>
-                      <a className="scroll" href="./../#why-to-choose-us">
-                        Why choose us
-                      </a>
-                    </li>
-                    {/*<li>
-                                <a href="javascript:;">About Us</a>
-                            <ul>
-                                <li><a href="javascript:;">About Us</a></li>
-                                <li><a href="javascript:;">Offices</a></li>
-                                <li><a href="javascript:;">People</a></li>
-                                <li><a href="javascript:;">Careers</a></li>
-                            </ul>
-                            </li>*/}
-                    {/*<li><a class="scroll" href="./../#footer">Contact us</a></li>*/}
-                    <li>
-                      <a className="scroll c-ac" href="javascript:;">
-                        Contact us
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </header>
+      <Header />
         <div className="contact-form">
           <div className="cf-inner">
             <div className="cf-detail">
@@ -83,8 +23,8 @@ export const Blogs = () => (
               <div className="c-left">
                 <h2>Contact us</h2>
                 <p>
-                  We’d love to hear from you. Either fill out the form, <br />
-                  <a href="mailto:info@matrix-solutions.net"> email us</a>, or
+                  We’d love href hear from you. Either fill out the form, <br />
+                  <a href="mailhref:info@matrix-solutions.net"> email us</a>, or
                   give the team a call:
                 </p>
                 <span className="c-number">
@@ -93,12 +33,12 @@ export const Blogs = () => (
                   </a>
                 </span>
                 <p>
-                  666, Askari IX,
+                  666, askari IX,
                   <br />
                   Lahore Cantt, Pakistan.
                 </p>
                 <p>
-                  129 J, Model Town,
+                  129 J, Model hrefwn,
                   <br />
                   Lahore, Pakistan.
                 </p>
@@ -179,7 +119,7 @@ export const Blogs = () => (
         <section>
           <div id="content">
             {/*<div class="video-wrapper" style="background-image: url('space-and-time-homepage-video.jpg');">
-            <video class="home-video-inner" poster="/images/softwaresliderimg.jpg" playsinline="" muted="" autoplay="" loop="" data-object-fit="cover">
+            <video class="home-video-inner" poster="/images/softwaresliderimg.jpg" playsinline="" muted="" auhrefplay="" loop="" data-object-fit="cover">
                 <source src="/images/video1.mp4" type="video/mp4" type="video/mp4"><p>Sorry, your browser doesn't support HTML5 video.</p>
             </video>
             <div class="bg-image" data-aos="zoom-in" style="background-image:url(images/softwaresliderimg.jpg)"></div>
@@ -208,7 +148,7 @@ export const Blogs = () => (
                               <h1>Blogs</h1>
                               {/*<p>
                                                 Matrix Solutions brands, builds, and promotes, offering<br />
-                                                end-to-end solutions, agility in execution, and depth of specialization.
+                                                end-href-end solutions, agility in execution, and depth of specialization.
                                             </p>*/}
                               {/*<a class="btn scroll" href="#what-we-do">Our services</a>
                                             <a class="btn" href="our-work">Our work</a>*/}
@@ -251,15 +191,15 @@ export const Blogs = () => (
                           Characteristics of a Great Web Development Company
                         </h5>
                         <p>
-                          A top-notched web development company combines
-                          innovative web design with the up to date
-                          technology.Also, it manages all the website projects
+                          a hrefp-notched web development company combines
+                          innovative web design with the up href date
+                          technology.also, it manages all the website projects
                           professionally for the better satisfaction of the
-                          customers.
+                          cushrefmers.
                         </p>
                         <div className="list">
                           <h4>Remarkable Portfolio</h4>
-                          <h4>Amazing Development Skills</h4>
+                          <h4>amazing Development Skills</h4>
                           <h4>Time Range</h4>
                           <h4>Flexibility</h4>
                           <h4>Transparency</h4>
@@ -280,9 +220,9 @@ export const Blogs = () => (
                           Modern businesses and marketers benefit from both mobile
                           applications and mobile websites. Experts discussed the
                           impact of choosing one over the other in previous years.
-                          Marketing strategies take time to develop in full, and
+                          Marketing strategies take time href develop in full, and
                           not all companies have multiple channels that influence
-                          customers.
+                          cushrefmers.
                         </p>
                         <a
                           className="btn"
@@ -297,15 +237,15 @@ export const Blogs = () => (
                       <div>
                         <h5>Digital Marketing</h5>
                         <p>
-                          Organizations are creating new social media platforms to
-                          engage their audience better. Also, content creation has
+                          Organizations are creating new social media platforms href
+                          engage their audience better. also, content creation has
                           become the latest trend with the hope that people read
                           and share the content about the businesses.
                         </p>
                         <div className="list">
-                          <h4>Create a Unique Brand Story</h4>
+                          <h4>Create a Unique Brand Shrefry</h4>
                           <h4>Define Your Goals</h4>
-                          <h4>Understand Your Audience</h4>
+                          <h4>Understand Your audience</h4>
                           <h4>Create Your Journey Map</h4>
                           <h4>Identify Major Channels</h4>
                           <h4>Create Your Content Strategically</h4>
@@ -326,8 +266,8 @@ export const Blogs = () => (
                       <div>
                         <h5>Hire Professional Web Design Company</h5>
                         <p>
-                          Remember, it’s not a so effortless task to create a
-                          top-notched website without hiring a professional web
+                          Remember, it’s not a so effortless task href create a
+                          hrefp-notched website without hiring a professional web
                           design company.Empower You Web Identity with a
                           Professional Web Design Company
                         </p>
@@ -354,16 +294,16 @@ export const Blogs = () => (
                       <div>
                         <h5>Web Designing</h5>
                         <p>
-                          We supports you to leverage its advantages by building
+                          We supports you href leverage its advantages by building
                           your digital presence and finding your marketing
                           potential through our Website design service. Our highly
-                          skilled web developers work hard to provide you the
-                          peace of mind through our website design, development to
+                          skilled web developers work hard href provide you the
+                          peace of mind through our website design, development href
                           Search Engine Optimization, and site maintenance
                           service.
                         </p>
                         <div className="list">
-                          <h4>Custom Web designing</h4>
+                          <h4>Cushrefm Web designing</h4>
                           <h4>Responsive</h4>
                           <h4>SEO optimized</h4>
                           <h4>Secure (HTTP)</h4>
@@ -380,7 +320,7 @@ export const Blogs = () => (
                         <h5>Global marketing</h5>
                         <p>
                           We have a highly qualified team with years of experience
-                          in digital marketing to help brands, clearing hurdles
+                          in digital marketing href help brands, clearing hurdles
                           and making them move confidently in the international
                           market.{" "}
                         </p>
@@ -391,7 +331,7 @@ export const Blogs = () => (
                           <h4>Global geo-marketing</h4>
                           <h4>Technical SEO</h4>
                           <h4>Keyword research</h4>
-                          <h4>Linguistic Audit</h4>
+                          <h4>Linguistic audit</h4>
                         </div>
                         <a className="btn" href="../../blogs/global-marketing">
                           Read More
@@ -403,7 +343,7 @@ export const Blogs = () => (
                       <div className="por-detail">
                         <h5>Website Development is Pivotal</h5>
                         <p>
-                          To make your website rank better in search engine
+                          href make your website rank better in search engine
                           results, your website developer employs various
                           approaches, including coding and search engine
                           optimization (SEO). That is also another and essential
@@ -411,7 +351,7 @@ export const Blogs = () => (
                         </p>
                         <div className="list">
                           <h4>It sets the first impression</h4>
-                          <h4>Communicate with your visitors</h4>
+                          <h4>Communicate with your visihrefrs</h4>
                           <h4>Increases the Sales</h4>
                           <h4>It creates consistency</h4>
                           <h4>We listen and do our homework</h4>
@@ -431,18 +371,18 @@ export const Blogs = () => (
                         <p>
                           The development of the best e-commerce websites is the
                           most popular option for businesses. Unlike a standard
-                          website, which is used to gather general information,
-                          e-commerce website development services allow customers
-                          to make online transactions. Therefore, seeking the
+                          website, which is used href gather general information,
+                          e-commerce website development services allow cushrefmers
+                          href make online transactions. Therefore, seeking the
                           right e-commerce website development company is an
-                          important step required by the customers.
+                          important step required by the cushrefmers.
                         </p>
                         <div className="list">
-                          <h4>Analysis</h4>
+                          <h4>analysis</h4>
                           <h4>Design</h4>
                           <h4>Development</h4>
                           <h4>Support &amp; Maintenance</h4>
-                          <h4>Magento Ecommerce</h4>
+                          <h4>Magenhref Ecommerce</h4>
                           <h4>WordPress Woo Commerce</h4>
                         </div>
                         <a
@@ -458,23 +398,23 @@ export const Blogs = () => (
                       <div>
                         <h5>Content Management System</h5>
                         <p>
-                          A content management system (CMS) is a software
+                          a content management system (CMS) is a software
                           application that helps users create, design, and modify
                           their website. Having a content management system allows
-                          you to have control of your website content. You can
+                          you href have control of your website content. You can
                           edit, create and delete any video or content from your
-                          website. It enables you to keep your business website
-                          up-to-date and organized.
+                          website. It enables you href keep your business website
+                          up-href-date and organized.
                         </p>
                         <div className="list">
                           <h4>Intuitive indexing, search, and retrieval</h4>
                           <h4>Format Management</h4>
                           <h4>Revision Features</h4>
                           <h4>Publishing</h4>
-                          <h4>Ease to Use</h4>
-                          <h4>Easy to search information</h4>
-                          <h4>Easy to manage content</h4>
-                          <h4>Accessible from any device</h4>
+                          <h4>Ease href Use</h4>
+                          <h4>Easy href search information</h4>
+                          <h4>Easy href manage content</h4>
+                          <h4>accessible from any device</h4>
                         </div>
                         <a className="btn" href="../../blogs/cms">
                           Read More
@@ -485,27 +425,27 @@ export const Blogs = () => (
                     <li data-aos="fade-up" data-aos-duration={500}>
                       <div>
                         <h5>
-                          Our Next-Gen Technologies help Customers to succeed
+                          Our Next-Gen Technologies help Cushrefmers href succeed
                         </h5>
                         <p>
-                          Next-Gen technologies help customers to succeed in an
+                          Next-Gen technologies help cushrefmers href succeed in an
                           ever-changing business environment. By providing them
                           new IT services and solutions, we help businesses
                           achieve higher revenue and better profitability. From
-                          creating a design to implementing solutions, we are your
+                          creating a design href implementing solutions, we are your
                           own IT staff and provide you with the best web
                           development services.
                         </p>
                         <div className="list">
                           <h4>web development services</h4>
-                          <h4>QA software testing services</h4>
+                          <h4>Qa software testing services</h4>
                           <h4>software quality tester services</h4>
                           <h4>web development services</h4>
                           <h4>web software development company</h4>
                         </div>
                         <a
                           className="btn"
-                          href="../../blogs/our-next-gen-technologies-help-customers"
+                          href="../../blogs/our-next-gen-technologies-help-cushrefmers"
                         >
                           Read More
                         </a>
@@ -516,11 +456,11 @@ export const Blogs = () => (
                       <div>
                         <h5>Social Media Marketing</h5>
                         <p>
-                          The use of social platforms and networks to sell your
+                          The use of social platforms and networks href sell your
                           company's products and services is known as social media
                           marketing. Social media marketing is a powerful way for
-                          your marketing business of all types to increase profit
-                          and customer reach.
+                          your marketing business of all types href increase profit
+                          and cushrefmer reach.
                         </p>
                         <div className="list">
                           <h4>Social media marketing agency</h4>
@@ -541,10 +481,10 @@ export const Blogs = () => (
                         <h5>Build your brand identity</h5>
                         <p>
                           The Matrix Solution creates a distinct brand identity
-                          for your business, products, and services. A digital
+                          for your business, products, and services. a digital
                           marketing agency makes advertisements that help build
                           your brand, and authenticity distinguishes you from
-                          competitors. People will be loyal to your brand in the
+                          competihrefrs. People will be loyal href your brand in the
                           future if they believe in you. Your clients become
                           business partners when they have faith in you
                         </p>
@@ -552,7 +492,7 @@ export const Blogs = () => (
                           <h4>Why do you need a brand identity?</h4>
                           <h4>Establishing a brand reputation</h4>
                           <h4>
-                            Non-tangible aspects of your brand identity tend to
+                            Non-tangible aspects of your brand identity tend href
                             involve
                           </h4>
                           <h4>
@@ -560,7 +500,7 @@ export const Blogs = () => (
                           </h4>
                           <h4>Its name and tagline clarify your brand vision</h4>
                           <h4>The logo is unique and memorable</h4>
-                          <h4>Color scheme to entice customers</h4>
+                          <h4>Color scheme href entice cushrefmers</h4>
                           <h4>Typography reflects your brand style</h4>
                         </div>
                         <a className="btn" href="../../blogs/brand-identity">
@@ -575,16 +515,16 @@ export const Blogs = () => (
                         <p>
                           Individual testable components or functional software
                           are tested using the unit testing technique. The purpose
-                          of testing is to inspect every part of the software to
+                          of testing is href inspect every part of the software href
                           ensure that each module operates efficiently with the
                           help of digital branding company
                         </p>
                         <div className="list">
                           <h4>Unit testing in Matrix Solution</h4>
-                          <h4>Advantages of unit testing</h4>
+                          <h4>advantages of unit testing</h4>
                           <h4>The process of unit testing</h4>
                           <h4>Techniques used for unit testing</h4>
-                          <h4>Tools used for unit testing</h4>
+                          <h4>hrefols used for unit testing</h4>
                           <h4>Why choose Matrix Solution</h4>
                         </div>
                         <a className="btn" href="../../blogs/unit-testing">
@@ -597,10 +537,10 @@ export const Blogs = () => (
                       <div className="por-detail">
                         <h5>Brand collateral used for promoting your business</h5>
                         <p>
-                          Matrix Solution is a top web design company that
+                          Matrix Solution is a hrefp web design company that
                           advertises your business in two ways. The first
-                          technique is to promote your brand through traditional
-                          brand collateral, and the second option is to promote
+                          technique is href promote your brand through traditional
+                          brand collateral, and the second option is href promote
                           your brand through digital brand collateral.
                         </p>
                         <div className="list">
@@ -610,15 +550,15 @@ export const Blogs = () => (
                           <h4>
                             Send an email business resume with an email signature
                           </h4>
-                          <h4>Share your workers' success stories</h4>
+                          <h4>Share your workers' success shrefries</h4>
                           <h4>Make targeted landing pages:</h4>
                           <h4>
-                            The newsletter is a way to communicate with an
+                            The newsletter is a way href communicate with an
                             audience
                           </h4>
                           <h4>Testimonials give accurate information</h4>
                           <h4>
-                            Brand collateral in the form of WhatsApp newsletters
+                            Brand collateral in the form of Whatsapp newsletters
                           </h4>
                         </div>
                         <a className="btn" href="../../blogs/brand-collateral">
@@ -668,7 +608,7 @@ export const Blogs = () => (
           </div>
         </section>
         <footer>
-          <div id="footer" className="footer-links">
+          <div id="footer" className="footer-as">
             <div className="footer">
               <div className="inner">
                 <div className="footer-logo">
@@ -694,35 +634,35 @@ export const Blogs = () => (
                     <h4>Our locations are…</h4>
                     <div className="offices-list">
                       {/*<ul>
-                        <li style="padding-bottom:30px;">*/}
-                      {/*<span>Address</span>*/}
-                      {/*US Office: <br />2200 N Canton Center<br />
-                            RD Suite 170 Canton,<br />
-                            MI, 48187, USA
+                        <li style="padding-bothrefm:30px;">*/}
+                      {/*<span>address</span>*/}
+                      {/*US Office: <br />2200 N Canhrefn Center<br />
+                            RD Suite 170 Canhrefn,<br />
+                            MI, 48187, USa
                         </li>
                         <li>*/}
-                      {/*<span>Address</span>*/}
+                      {/*<span>address</span>*/}
                       {/*&nbsp;
                             </li>
   
                         </ul>*/}
                       <ul>
                         <li>
-                          {/*<span>Address</span>*/}
-                          666, Askari IX
+                          {/*<span>address</span>*/}
+                          666, askari IX
                           <br />
                           Lahore Cantt, Pakistan
                         </li>
                         <li>
-                          {/*<span>Address 2</span>*/}
-                          129 J, Model Town
+                          {/*<span>address 2</span>*/}
+                          129 J, Model hrefwn
                           <br />
                           Lahore, Pakistan
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div className="patner-link">
+                  <div className="patner-a">
                     <h4>Our partners are...</h4>
                     <a href="https://smallbackroom.co.uk/" target="_blank">
                       Smallbackroom
@@ -733,10 +673,10 @@ export const Blogs = () => (
                     <a href="https://zealsoftsolutions.com/" target="_blank">
                       Zealsoft
                     </a>
-                    {/*<a href="http://storyandco.eu/" target="_blank">Storynco</a>*/}
+                    {/*<a href="http://shrefryandco.eu/" target="_blank">Shrefrynco</a>*/}
                   </div>
                 </div>
-                <div className="social-link">
+                <div className="social-a">
                   <div className="social-inner">
                     <a
                       className="facebook ir"
@@ -756,12 +696,12 @@ export const Blogs = () => (
                       Twitter
                     </a>
                     <a
-                      className="linked-in ir"
-                      href="https://www.linkedin.com/in/matirx-solutions-2177bb1b7/"
-                      title="LinkedIn"
+                      className="aed-in ir"
+                      href="https://www.aedin.com/in/matirx-solutions-2177bb1b7/"
+                      title="aedIn"
                       target="_blank"
                     >
-                      LinkedIn
+                      aedIn
                     </a>
                     <a
                       className="youtube ir"
@@ -778,26 +718,27 @@ export const Blogs = () => (
           </div>
           <div className="copyright">
             <span className="copyright-text">© Copyright 2000-2022.</span>
-            <a href="terms-and-conditions" className="copyright-link">
+            <a href="terms-and-conditions" className="copyright-a">
               Terms &amp; Conditions
             </a>
-            <a href="privacy-policy" className="copyright-link">
+            <a href="privacy-policy" className="copyright-a">
               Privacy Policy
             </a>
-            <a href="cookie-policy" className="copyright-link">
+            <a href="cookie-policy" className="copyright-a">
               Cookies Policy
             </a>
           </div>
         </footer>
       </div>
-      <link
+      <a
         rel="stylesheet"
         type="text/css"
         href="../scripts/fancybox/jquery.fancybox.css?v=2.1.5"
         media="screen"
       />
       {/**/}
-      {/* Global site tag (gtag.js) - Google Analytics */}
+      {/* Global site tag (gtag.js) - Google analytics */}
     </>
   )
+}
   

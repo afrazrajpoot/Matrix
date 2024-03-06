@@ -5,6 +5,10 @@ import { Our_work } from './app/pages/our-work/Our-work'
 import { Brand_identity } from './app/pages/Blogs/brand-identity/Brand-identity'
 import { Route, Routes } from 'react-router-dom'
 import { Brand_collateral } from './app/pages/Blogs/Brand-collatreral/Brand-collateral'
+import { Nav } from './app/components/Nav'
+// import { Contact } from './app/components/Contact'
+// import {Nav} from './app/pages/Nav'
+
 
 const App = () => {
   return (
@@ -17,7 +21,9 @@ const App = () => {
       <Routes>
       <Route path='/' element={<Home2  />} />
       <Route path='/blogs' element={<Blogs />} />
+   
       </Routes>
+      
     </>
   )
 }

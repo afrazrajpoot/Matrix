@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import $ from 'jquery';
 import Slider1 from '../components/Slider';
+import Header from '../components/Header';
 
 
 
@@ -15,76 +16,7 @@ export const Home2 = () => {
  
     {/*<div id="container-cookies"></div>*/}
     <div id="outer-wrapper">
-      <header>
-        <div className="header">
-          <a href="./" title="Matrix Solutions" className="logo ir">
-            Matrix
-          </a>
-          <a className="menu ir" href="#">
-            Menu
-          </a>
-          <a className="contact-icon ir" href="#">
-            contact-icon
-          </a>
-          <nav>
-            <div className="middle-nav">
-              <div className="middle-cell">
-                <ul>
-                  <li>
-                    <a className="scroll" href="./#our-clients">
-                      Our clients
-                    </a>
-                  </li>
-                  <li>
-                    <a className="scroll" href="./#recent-work">
-                      Recent work
-                    </a>
-                  </li>
-                  <li>
-                    <a href="services/">Services</a>
-                  </li>
-                  <li>
-                    <a href="our-work">Our work</a>
-                  </li>
-                  <li>
-                    <a className="scroll" href="./#what-we-do">
-                      What we do
-                    </a>
-                  </li>
-                  <li>
-                    <a className="scroll" href="./#our-technologies">
-                      Our technologies
-                    </a>
-                  </li>
-                  <li>
-                    <a href="blogs">Blogs</a>
-                  </li>
-                  <li>
-                    <a className="scroll" href="./#why-to-choose-us">
-                      Why choose us
-                    </a>
-                  </li>
-                  {/*<li>
-  <a href="javascript:;">About Us</a>
-    <ul>
-  <li><a href="javascript:;">About Us</a></li>
-  <li><a href="javascript:;">Offices</a></li>
-  <li><a href="javascript:;">People</a></li>
-  <li><a href="javascript:;">Careers</a></li>
-    </ul>
-    </li>*/}
-                  {/*<li><a class="scroll" href="./#footer">Contact us</a></li>*/}
-                  <li>
-                    <a className="scroll c-ac" href="javascript:;">
-                      Contact us
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
+     <Header />
       <div className="contact-form">
         <div className="cf-inner">
           <div className="cf-detail">
